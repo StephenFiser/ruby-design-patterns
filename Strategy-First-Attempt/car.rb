@@ -5,7 +5,7 @@ class Car
 		@driver = driver
 	end
 
-	def drive_to_work # This is a 'template method' -> Calls abstract methods which are overrided in subclasses
+	def drive_to_work
 		start_engine
 		turn_left("Chenonceau Blvd")
 		turn_right("Cantrell")
@@ -23,7 +23,7 @@ class Car
 		stop_engine
 	end
 
-	def start_engine # This is a 'hook method' -> Empty method that can be overridden in subclass
+	def start_engine
 	end
 
 	def stop_engine
