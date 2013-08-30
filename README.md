@@ -1,0 +1,1 @@
+This is a collection of examples that illustrate how to use design patterns in Ruby.
