@@ -1,6 +1,6 @@
 class ExternalIterator
 	def initialize array 
-		@array = array
+		@array = Array.new(array) # make a shallow copy of the array to make it change resistant
 		@index = 0
 	end
 
