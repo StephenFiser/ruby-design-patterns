@@ -1,0 +1,21 @@
+class ExternalIterator
+	def initialize array 
+		@array = array
+		@index = 0
+	end
+
+	def has_next?
+		@index < @array.length
+	end
+
+	def item
+		@array[@index]
+	end
+
+	def next_item
+		value = @array[@index] # set to the current item
+		@index += 1
+		value # returns original item from above
+	end
+end
+
